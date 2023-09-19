@@ -1,0 +1,23 @@
+name: sufei增加自定义测速节点
+desc: 增加未知节点
+
+
+proxy-groups:
+- name: "\U0001F530国外流量"
+  proxies:
+  - "⏫urlTest"
+- name: "⏫urlTest"
+  type: url-test
+  disable-udp: false
+  proxies:
+  - HK 香港 | A1 | 02
+  - HK 香港 | A1 | 04
+  - HK 香港 | A1 | 05
+  - HK 香港 | A1 | 06
+  - HK 香港 | C1 | 01
+  - HK 香港 | C1 | 02
+  - TW 台湾 | A1 | 01
+  - TW 台湾 | A1 | 02
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+  tolerance: '150'
